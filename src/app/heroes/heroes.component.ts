@@ -8,6 +8,9 @@ import { HEROES } from '../mock-heroes';
   styleUrls: ['./heroes.component.css'],
 })
 export class HeroesComponent implements OnInit {
+onSelect(_t5: Hero) {
+throw new Error('Method not implemented.');
+}
 
   heroes = HEROES;
   
@@ -15,6 +18,7 @@ export class HeroesComponent implements OnInit {
     id: 1,
     name: 'Fyora'
   };
+selectedHero: any;
 
   constructor() { }
 
